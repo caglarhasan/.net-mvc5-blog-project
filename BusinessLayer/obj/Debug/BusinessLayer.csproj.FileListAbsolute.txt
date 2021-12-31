@@ -1,0 +1,15 @@
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\EntityLayer.dll
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\Hasan\source\repos\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Hasan\source\repos\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\Hasan\source\repos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hasan\source\repos\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\Hasan\source\repos\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Hasan\source\repos\BusinessLayer\obj\Debug\BusinessLayer.pdb
