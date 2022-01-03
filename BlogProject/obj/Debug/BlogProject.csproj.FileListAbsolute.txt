@@ -180,3 +180,7 @@ C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\obj\Debug\Blo
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\obj\Debug\BlogProject.csproj.CopyComplete
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\obj\Debug\BlogProject.dll
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\obj\Debug\BlogProject.pdb
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\bin\PagedList.dll
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\bin\PagedList.Mvc.dll
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\bin\PagedList.xml
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\BlogProject\bin\PagedList.Mvc.xml

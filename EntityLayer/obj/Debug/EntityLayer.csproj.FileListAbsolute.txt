@@ -10,3 +10,15 @@ C:\Users\Hasan\source\repos\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompile
 C:\Users\Hasan\source\repos\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\Hasan\source\repos\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\Hasan\source\repos\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\EntityLayer\obj\Debug\EntityLayer.pdb

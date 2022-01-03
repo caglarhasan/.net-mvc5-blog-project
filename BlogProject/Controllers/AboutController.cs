@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,11 @@ namespace BlogProject.Controllers
     public class AboutController : Controller
     {
         // GET: About
+        AboutManager aboutManager = new AboutManager();
         public ActionResult Index()
         {
-            return View();
+            var aboutContentList = aboutManager.GetAll();
+            return View(aboutContentList);
         }
 
         public PartialViewResult MeetTheTeam()

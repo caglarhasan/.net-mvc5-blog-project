@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<EntityLayer.Concrete.About>
 @{
     Layout = null;
 }
@@ -59,6 +59,7 @@
                                 <li><a href="category.html">Film & Dizi</a></li>
                                 <li><a href="category.html">Kültür & Sanat</a></li>
                                 <li><a href="category.html">Seyahat & Gezi</a></li>
+                                <li><a href="category.html">Diğer Başlıklar</a></li>
                                 <li><a href="category.html">Hakkımızda</a></li>
                                 <li><a href="category.html">İletişim</a></li>
                                 <li class="d-none d-lg-inline-block"><a href="#" class="js-search-toggle"><span class="icon-search"></span></a></li>
@@ -74,10 +75,13 @@
         <div class="site-footer">
             <div class="container">
                 <div class="row mb-5">
+                    @foreach (var item in Model)
+                    {
                     <div class="col-md-4">
                         <h3 class="footer-heading mb-4">Hakkımızda</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat reprehenderit magnam deleniti quasi saepe, consequatur atque sequi delectus dolore veritatis obcaecati quae, repellat eveniet omnis, voluptatem in. Soluta, eligendi, architecto.</p>
+                        <p>@item.AboutContent1</p>
                     </div>
+                    }
                     <div class="col-md-3 ml-auto">
                         <!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
                         <ul class="list-unstyled float-left mr-5">
