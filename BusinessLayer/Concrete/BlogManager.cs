@@ -16,5 +16,10 @@ namespace BusinessLayer.Concrete
         {
             return repositoryBlog.List();
         }
+
+        public List<Blog> GetBlogById(int id)
+        {
+            return repositoryBlog.List(x => x.BlogId == id);
+        }
     }
 }

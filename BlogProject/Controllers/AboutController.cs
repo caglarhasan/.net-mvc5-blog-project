@@ -13,8 +13,8 @@ namespace BlogProject.Controllers
         AboutManager aboutManager = new AboutManager();
         public ActionResult Index()
         {
-            var aboutContentList = aboutManager.GetAll();
-            return View(aboutContentList);
+            var aboutContentLists = aboutManager.GetAll();
+            return View(aboutContentLists);
         }
 
         public PartialViewResult MeetTheTeam()

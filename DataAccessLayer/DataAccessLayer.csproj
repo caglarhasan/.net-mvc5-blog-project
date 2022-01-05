@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202201031904285_newMigrationForNewTable.designer.cs">
       <DependentUpon>202201031904285_newMigrationForNewTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202201050900392_AddNewProperty.cs" />
+    <Compile Include="Migrations\202201050900392_AddNewProperty.designer.cs">
+      <DependentUpon>202201050900392_AddNewProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202201031904285_newMigrationForNewTable.resx">
       <DependentUpon>202201031904285_newMigrationForNewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202201050900392_AddNewProperty.resx">
+      <DependentUpon>202201050900392_AddNewProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

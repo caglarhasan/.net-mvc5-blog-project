@@ -10,7 +10,7 @@ namespace BusinessLayer.Concrete
 {
     public class AboutManager
     {
-        readonly Repository<About> repositoryAbout = new Repository<About>();
+        Repository<About> repositoryAbout = new Repository<About>();
 
         public List<About> GetAll()
         {

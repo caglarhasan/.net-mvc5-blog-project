@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EntityLayer.Concrete.About>
+﻿
 @{
     Layout = null;
 }
@@ -75,13 +75,10 @@
         <div class="site-footer">
             <div class="container">
                 <div class="row mb-5">
-                    @foreach (var item in Model)
-                    {
-                    <div class="col-md-4">
-                        <h3 class="footer-heading mb-4">Hakkımızda</h3>
-                        <p>@item.AboutContent1</p>
-                    </div>
-                    }
+                        <div class="col-md-4">
+                            <h3 class="footer-heading mb-4">Hakkımızda</h3>
+                            <p>AboutContent1</p>
+                        </div>
                     <div class="col-md-3 ml-auto">
                         <!-- <h3 class="footer-heading mb-4">Navigation</h3> -->
                         <ul class="list-unstyled float-left mr-5">

@@ -21,6 +21,8 @@ namespace EntityLayer.Concrete
         [StringLength(300)]
         public string CommentText { get; set; }
 
+        public DateTime CommentDate { get; set; }
+
         //Blog-Yorum İlişkisi
         public int BlogId { get; set; }
         public virtual Blog Blog { get; set; }

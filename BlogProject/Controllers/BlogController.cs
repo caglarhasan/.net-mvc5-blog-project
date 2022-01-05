@@ -85,14 +85,16 @@ namespace BlogProject.Controllers
             return View();
         }
 
-        public PartialViewResult BlogCover()
+        public PartialViewResult BlogCover(int id)
         {
-            return PartialView();
+            var blogCoverList = blogManager.GetBlogById(id);
+            return PartialView(blogCoverList);
         }
 
-        public PartialViewResult BlogReadAll()
+        public PartialViewResult BlogReadAll(int id)
         {
-            return PartialView();
+            var blogDetailsLists = blogManager.GetBlogById(id);
+            return PartialView(blogDetailsLists);
         }
     }
 }
