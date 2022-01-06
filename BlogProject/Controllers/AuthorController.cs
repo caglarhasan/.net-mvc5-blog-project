@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,15 +10,19 @@ namespace BlogProject.Controllers
     public class AuthorController : Controller
     {
         // GET: Author
-        public PartialViewResult AuthorAbout()
-        {
 
-            return PartialView();
+        BlogManager blogManager = new BlogManager();
+        public PartialViewResult AuthorAbout(int id)
+        {
+            var authorDetail = blogManager.GetBlogById(id);
+            return PartialView(authorDetail);
         }
 
-        public PartialViewResult AuthorPopularPost()
+        public PartialViewResult AuthorPopularPost(int id)
         {
-            return PartialView();
+            var blogAuthorId = blogManager.GetAll().Where(x => x.BlogId == id).Select(y => y.AuthorId).FirstOrDefault();
+            var authorBlogs = blogManager.GetBlogByAuthor(blogAuthorId).OrderByDescending(x=>x.BlogId);
+            return PartialView(authorBlogs);
         }
     }
 }

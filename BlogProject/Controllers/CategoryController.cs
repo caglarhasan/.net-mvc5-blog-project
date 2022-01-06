@@ -20,7 +20,8 @@ namespace BlogProject.Controllers
 
         public PartialViewResult BlogDetailsCategoryList()
         {
-            return PartialView();
+            var categoryValues = categoryManager.GetAll();
+            return PartialView(categoryValues);
         }
     }
 }

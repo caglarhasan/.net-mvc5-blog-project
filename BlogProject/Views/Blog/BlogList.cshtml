@@ -40,7 +40,7 @@
                 }
                 <div class="col-lg-4 mb-4">
                     <div class="entry2">
-                        <a href="single.html"><img src="@item.BlogImage" style="height:250px;"  alt="Image" class="img-fluid rounded"></a>
+                        <a href="/Blog/BlogDetails/@item.BlogId"><img src="@item.BlogImage" style="height:250px;"  alt="Image" class="img-fluid rounded"></a>
                         <div class="excerpt">
                             <span class="@color">@item.Category.CategoryName</span>
 
@@ -52,7 +52,7 @@
                             </div>
 
                             <p>@item.BlogContent.Substring(0, item.BlogContent.Substring(0,200).LastIndexOf(" "))...</p>
-                            <p><a href="#">Devamını Oku</a></p>
+                            <p><a href="/Blog/BlogDetails/@item.BlogId">Devamını Oku</a></p>
                         </div>
                     </div>
                 </div>

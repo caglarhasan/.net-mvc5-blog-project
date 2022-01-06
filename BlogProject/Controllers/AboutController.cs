@@ -11,6 +11,7 @@ namespace BlogProject.Controllers
     {
         // GET: About
         AboutManager aboutManager = new AboutManager();
+        AuthorManager authorManager = new AuthorManager();
         public ActionResult Index()
         {
             var aboutContentLists = aboutManager.GetAll();
@@ -19,7 +20,8 @@ namespace BlogProject.Controllers
 
         public PartialViewResult MeetTheTeam()
         {
-            return PartialView();
+            var teamMembersList = authorManager.GetAllAuthor();
+            return PartialView(teamMembersList);
         }
     }
 }

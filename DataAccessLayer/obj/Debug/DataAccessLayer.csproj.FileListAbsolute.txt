@@ -31,3 +31,4 @@ C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.newMigrationForNewTable.resources
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.AddNewProperty.resources
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addingNewPropertyForCategoryTable.resources
