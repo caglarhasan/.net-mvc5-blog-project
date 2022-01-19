@@ -1,4 +1,7 @@
-﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+﻿@using PagedList
+@using PagedList.Mvc
+
+@model IEnumerable<EntityLayer.Concrete.Blog>
 @{
     ViewBag.Title = "BlogByCategory";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -45,6 +48,9 @@
         </div>
     </div>
 </div>
+
+@Html.PagedListPager((IPagedList)Model, page => Url.Action("Index", new { page }), new PagedListRenderOptions { LinkToPreviousPageFormat = " < ", LinkToNextPageFormat = " >" })
+
 
 @Html.Action("AddMail", "SubscribeMail")
 

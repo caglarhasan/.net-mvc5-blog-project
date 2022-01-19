@@ -31,5 +31,37 @@ namespace BusinessLayer.Concrete
         {
             return repositoryBlog.List(x => x.CategoryId == id);
         }
+
+        public int BlogAddBL(Blog blog)
+        {
+            if(blog.BlogTitle==" " || blog.BlogImage == "" || blog.BlogTitle.Length <=5 || blog.BlogContent.Length <=100)
+            {
+                return -1;
+            }
+            return repositoryBlog.Insert(blog);
+        }
+
+        public int DeleteBlogBL(int p)
+        {
+            Blog blog = repositoryBlog.Find(x => x.BlogId == p);
+            return repositoryBlog.Delete(blog);
+        }
+
+        public Blog FindBlog(int p)
+        {
+            return repositoryBlog.Find(x => x.BlogId == p);
+        }
+
+        public int UpdateBlogBL(Blog p)
+        {
+            Blog blog = repositoryBlog.Find(x => x.BlogId == p.BlogId);
+            blog.BlogTitle = p.BlogTitle;
+            blog.BlogContent = p.BlogContent;
+            blog.BlogDate = p.BlogDate;
+            blog.BlogImage = p.BlogImage;
+            blog.CategoryId = p.CategoryId;
+            blog.AuthorId = p.AuthorId;
+            return repositoryBlog.Update(blog);
+        }
     }
 }
