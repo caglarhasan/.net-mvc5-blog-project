@@ -21,6 +21,22 @@ namespace EntityLayer.Concrete
         [StringLength(300)]
         public string AuthorAbout { get; set; }
 
+        [StringLength(50)]
+        public string AuthorTitle { get; set; }
+
+        [StringLength(100)]
+        public string AuthorAboutShort { get; set; }
+
+        [StringLength(50)]
+        public string AuthorMail { get; set; }
+
+        [StringLength(50)]
+        public string Password { get; set; }
+
+        [StringLength(50)]
+        public string PhoneNumber { get; set; }
+
+
         //Yazar-Blog İlişkisi
         public ICollection<Blog> Blogs { get; set; }
     }

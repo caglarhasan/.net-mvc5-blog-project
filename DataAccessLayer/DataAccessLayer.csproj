@@ -73,6 +73,10 @@
     <Compile Include="Migrations\202201061026507_addingNewPropertyForCategoryTable.designer.cs">
       <DependentUpon>202201061026507_addingNewPropertyForCategoryTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202031612321_addingNewPropertyForAuthors.cs" />
+    <Compile Include="Migrations\202202031612321_addingNewPropertyForAuthors.designer.cs">
+      <DependentUpon>202202031612321_addingNewPropertyForAuthors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -89,6 +93,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201061026507_addingNewPropertyForCategoryTable.resx">
       <DependentUpon>202201061026507_addingNewPropertyForCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202031612321_addingNewPropertyForAuthors.resx">
+      <DependentUpon>202202031612321_addingNewPropertyForAuthors.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
