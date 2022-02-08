@@ -31,5 +31,31 @@ namespace BlogProject.Controllers
             commentManager.AddComment(comment);
             return PartialView();
         }
+
+        public ActionResult AdminCommentListTrue()
+        {
+
+            var commentsList = commentManager.GetCommentByStatusTrue();
+            return View(commentsList);
+        }
+
+        public ActionResult AdminCommentListFalse()
+        {
+
+            var commentsList = commentManager.GetCommentByStatusFalse();
+            return View(commentsList);
+        }
+
+        public ActionResult ChangeCommentStatusToFalse(int id)
+        {
+            commentManager.UpdateCommentStatusToFalse(id);
+            return RedirectToAction("AdminCommentListTrue");
+        }
+
+        public ActionResult ChangeCommentStatusToTrue(int id)
+        {
+            commentManager.UpdateCommentStatusToTrue(id);
+            return RedirectToAction("AdminCommentListFalse");
+        }
     }
 }

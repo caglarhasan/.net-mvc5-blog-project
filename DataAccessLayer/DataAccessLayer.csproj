@@ -77,6 +77,10 @@
     <Compile Include="Migrations\202202031612321_addingNewPropertyForAuthors.designer.cs">
       <DependentUpon>202202031612321_addingNewPropertyForAuthors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202081028304_addingNewPropertyForComments.cs" />
+    <Compile Include="Migrations\202202081028304_addingNewPropertyForComments.designer.cs">
+      <DependentUpon>202202081028304_addingNewPropertyForComments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -96,6 +100,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202031612321_addingNewPropertyForAuthors.resx">
       <DependentUpon>202202031612321_addingNewPropertyForAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202081028304_addingNewPropertyForComments.resx">
+      <DependentUpon>202202081028304_addingNewPropertyForComments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
