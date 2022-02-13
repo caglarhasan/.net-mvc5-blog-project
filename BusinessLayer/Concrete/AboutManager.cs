@@ -16,5 +16,16 @@ namespace BusinessLayer.Concrete
         {
             return repositoryAbout.List();
         }
+
+        public int UpdateAboutBL(About p)
+        {
+            About about = repositoryAbout.Find(x => x.AboutId == p.AboutId);
+            about.AboutContent1 = p.AboutContent1;
+            about.AboutContent2 = p.AboutContent2;
+            about.AboutImage1 = p.AboutImage1;
+            about.AboutImage2 = p.AboutImage2;
+            about.AboutId = p.AboutId;
+            return repositoryAbout.Update(about);
+        }
     }
 }

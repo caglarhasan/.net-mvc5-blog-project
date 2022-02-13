@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,22 @@ namespace BlogProject.Controllers
         {
             var teamMembersList = authorManager.GetAllAuthor();
             return PartialView(teamMembersList);
+        }
+
+        [HttpGet]
+        public ActionResult AdminUpdateAboutList()
+        {
+
+            var aboutList = aboutManager.GetAll();
+            return View(aboutList);
+        }
+
+        [HttpPost]
+        public ActionResult AdminUpdateAbout(About about)
+        {
+
+            aboutManager.UpdateAboutBL(about);
+            return RedirectToAction("AdminUpdateAboutList");
         }
     }
 }

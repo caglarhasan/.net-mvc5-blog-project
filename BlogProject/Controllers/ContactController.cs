@@ -32,5 +32,10 @@ namespace BlogProject.Controllers
             return PartialView();
         }
 
+        public ActionResult SendBox()
+        {
+            var messageList = contactManager.GetAll();
+            return View(messageList);
+        }
     }
 }

@@ -12,7 +12,7 @@
     <div class="card-body">
         <form class="form-group" method="post">
             @Html.Label("ID")
-            @Html.TextBoxFor(x => x.AuthorId, new { @class = "form-control" })
+            @Html.TextBoxFor(x => x.AuthorId, new { @class = "form-control", disabled = "disabled" })
             <br />
             @Html.Label("Adı Soyadı")
             @Html.TextBoxFor(x => x.AuthorFullName, new { @class = "form-control" })

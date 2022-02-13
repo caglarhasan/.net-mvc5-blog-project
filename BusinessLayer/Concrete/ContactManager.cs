@@ -21,6 +21,11 @@ namespace BusinessLayer.Concrete
             return repositoryContact.Insert(contact);
         }
 
+        public List<Contact> GetAll()
+        {
+            return repositoryContact.List();
+        }
+
 
     }
 }
