@@ -37,5 +37,11 @@ namespace BlogProject.Controllers
             var messageList = contactManager.GetAll();
             return View(messageList);
         }
+
+        public ActionResult MessageDetails(int id)
+        {
+            Contact contactDetails = contactManager.GetContactDetails(id);
+            return View(contactDetails);
+        }
     }
 }

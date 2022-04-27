@@ -81,6 +81,10 @@
     <Compile Include="Migrations\202202081028304_addingNewPropertyForComments.designer.cs">
       <DependentUpon>202202081028304_addingNewPropertyForComments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204252015433_addingNewPropForContact.cs" />
+    <Compile Include="Migrations\202204252015433_addingNewPropForContact.designer.cs">
+      <DependentUpon>202204252015433_addingNewPropForContact.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202081028304_addingNewPropertyForComments.resx">
       <DependentUpon>202202081028304_addingNewPropertyForComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204252015433_addingNewPropForContact.resx">
+      <DependentUpon>202204252015433_addingNewPropForContact.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

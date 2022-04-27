@@ -26,6 +26,9 @@ namespace BusinessLayer.Concrete
             return repositoryContact.List();
         }
 
-
+        public Contact GetContactDetails(int id)
+        {
+            return repositoryContact.Find(x => x.ContactId == id);
+        }
     }
 }
