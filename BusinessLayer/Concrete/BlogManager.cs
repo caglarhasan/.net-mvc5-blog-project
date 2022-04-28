@@ -52,7 +52,7 @@ namespace BusinessLayer.Concrete
             return repositoryBlog.Find(x => x.BlogId == p);
         }
 
-        public int UpdateBlogBL(Blog p)
+        public int UpdateBlog(Blog p)
         {
             Blog blog = repositoryBlog.Find(x => x.BlogId == p.BlogId);
             blog.BlogTitle = p.BlogTitle;

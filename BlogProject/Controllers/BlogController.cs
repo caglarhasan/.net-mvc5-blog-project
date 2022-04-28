@@ -185,7 +185,7 @@ namespace BlogProject.Controllers
         [HttpPost]
         public ActionResult UpdateBlog(Blog blog)
         {
-            blogManager.UpdateBlogBL(blog);
+            blogManager.UpdateBlog(blog);
             return RedirectToAction("AdminBlogList");
         }
 

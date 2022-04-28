@@ -142,6 +142,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SubscribeMailController.cs" />
@@ -2708,6 +2709,11 @@
     <Content Include="Views\Shared\_AuthorLayout.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\Login\AuthorLogin.cshtml" />
+    <Content Include="Views\User\PartialSettings.cshtml" />
+    <Content Include="Views\User\BlogList.cshtml" />
+    <Content Include="Views\User\UpdateBlog.cshtml" />
+    <Content Include="Views\User\AddNewBlog.cshtml" />
+    <Content Include="Views\Error\Page404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
