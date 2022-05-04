@@ -12,12 +12,15 @@ namespace BlogProject.Controllers
     {
         CommentManager commentManager = new CommentManager();
         // GET: Comment
+
+        [AllowAnonymous]
         public PartialViewResult CommentList(int id)
         {
             var commentsLists = commentManager.GetCommentByBlog(id);
             return PartialView(commentsLists);
         }
 
+        [AllowAnonymous]
         [HttpGet]
         public PartialViewResult LeaveComment(int id)
         {
@@ -25,9 +28,11 @@ namespace BlogProject.Controllers
             return PartialView();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public PartialViewResult LeaveComment(Comment comment)
         {
+            comment.CommentStatus = true;
             commentManager.AddComment(comment);
             return PartialView();
         }

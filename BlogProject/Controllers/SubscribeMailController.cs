@@ -10,6 +10,8 @@ namespace BlogProject.Controllers
 {
     public class SubscribeMailController : Controller
     {
+
+        [AllowAnonymous]
         [HttpGet]
         public PartialViewResult AddMail()
         {

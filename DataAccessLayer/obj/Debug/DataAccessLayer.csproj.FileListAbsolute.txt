@@ -35,3 +35,4 @@ C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addingNewPropertyForAuthors.resources
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addingNewPropertyForComments.resources
 C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addingNewPropForContact.resources
+C:\Users\Hasan\Documents\GitHub\.net-mvc5-blog-project\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.addingNewPropertyForAdmin.resources

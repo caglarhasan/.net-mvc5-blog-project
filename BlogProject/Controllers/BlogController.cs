@@ -16,12 +16,13 @@ namespace BlogProject.Controllers
 
         BlogManager blogManager = new BlogManager();
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
         }
 
-
+        [AllowAnonymous]
         public PartialViewResult BlogList(int page = 1)
         {
 
@@ -29,6 +30,7 @@ namespace BlogProject.Controllers
             return PartialView(allBlogList);
         }
 
+        [AllowAnonymous]
         public PartialViewResult FeaturedPosts()
         {
             // 1.Post
@@ -84,28 +86,33 @@ namespace BlogProject.Controllers
             return PartialView();
         }
 
+        [AllowAnonymous]
         public PartialViewResult OtherFeaturedPosts()
         {
             return PartialView();
         }
 
+        [AllowAnonymous]
         public ActionResult BlogDetails()
         {
             return View();
         }
 
+        [AllowAnonymous]
         public PartialViewResult BlogCover(int id)
         {
             var blogCoverList = blogManager.GetBlogById(id);
             return PartialView(blogCoverList);
         }
 
+        [AllowAnonymous]
         public PartialViewResult BlogReadAll(int id)
         {
             var blogDetailsLists = blogManager.GetBlogById(id);
             return PartialView(blogDetailsLists);
         }
 
+        [AllowAnonymous]
         public ActionResult BlogByCategory(int id, int page=1)
         {
             var blogListsByCategory = blogManager.GetBlogByCategory(id).OrderByDescending(x=> x.BlogId).ToPagedList(page,6);
@@ -194,6 +201,12 @@ namespace BlogProject.Controllers
             CommentManager commentManager = new CommentManager();
             var commentsLists = commentManager.GetCommentByBlog(id);
             return PartialView(commentsLists);
+        }
+
+        public ActionResult AuthorBlogList(int id)
+        {
+            var blogs = blogManager.GetBlogByAuthor(id);
+            return View(blogs);
         }
     }
 }

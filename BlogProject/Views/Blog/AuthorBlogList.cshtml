@@ -1,0 +1,94 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+
+@{
+    ViewBag.Title = "AuthorBlogList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h1>Yazarın Blogları</h1>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped projects">
+            <thead>
+                <tr>
+                    <th style="width: 1%">
+                        #
+                    </th>
+                    <th>
+                        Başlık
+                    </th>
+                    <th>
+                        Kategori
+                    </th>
+                    <th>
+                        Tarih
+                    </th>
+                    <th>
+                        Sil
+                    </th>
+                    <th>
+                        Güncelle
+                    </th>
+                    <th>
+                        Detaylar
+                    </th>
+                    <th>
+                        Yorumlar
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.BlogId
+                        </td>
+                        <td>
+                            @item.BlogTitle
+                        </td>
+                        <td>
+                            @item.Category.CategoryName
+                        </td>
+                        <td>
+                            @item.BlogDate.ToShortDateString()
+                        </td>
+                        <td>
+                            <a class="btn btn-danger btn-sm" href="/Blog/DeleteBlog/@item.BlogId">
+                                <i class="fas fa-trash">
+                                </i>
+                                Sil
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-info btn-sm" href="/Blog/UpdateBlog/@item.BlogId">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Güncelle
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-warning btn-sm" href="/Blog/BlogDetails/@item.BlogId">
+                                <i class="fas fa-folder">
+                                </i>
+                                Detaylar
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-dark btn-sm" href="/Blog/GetCommentsByBlog/@item.BlogId">
+                                <i class="fas fa-comment">
+                                </i>
+                                Yorumlar
+                            </a>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+        <br />
+    </div>
+</div>
+

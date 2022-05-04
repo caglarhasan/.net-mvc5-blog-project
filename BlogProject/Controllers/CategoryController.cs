@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,8 @@ namespace BlogProject.Controllers
 
         CategoryManager categoryManager = new CategoryManager();
 
-        public ActionResult Index()
-        {
-            var categoryValues = categoryManager.GetAll();
-            return View(categoryValues);
-        }
 
+        [AllowAnonymous]
         public PartialViewResult BlogDetailsCategoryList()
         {
             var categoryValues = categoryManager.GetAll();
@@ -28,6 +25,31 @@ namespace BlogProject.Controllers
         {
             var categoryList = categoryManager.GetAll();
             return View(categoryList);
+        }
+
+        [HttpGet]
+        public ActionResult AdminCategoryAdd()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AdminCategoryAdd(Category category)
+        {
+            categoryManager.AddCategoryBL(category);
+            return RedirectToAction("AdminCategoryList", "Category");
+        }
+
+        [HttpGet]
+        public ActionResult EditCategory(int id)
+        {
+            Category category = categoryManager.FindCategory(id);
+            return View(category);
+        }
+        [HttpPost]
+        public ActionResult EditCategory(Category p)
+        {
+            categoryManager.UpdateCategoryBL(p);
+            return RedirectToAction("AdminCategoryList", "Category");
         }
     }
 }

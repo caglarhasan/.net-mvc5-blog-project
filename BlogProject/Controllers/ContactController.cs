@@ -13,18 +13,20 @@ namespace BlogProject.Controllers
         // GET: Contact
         ContactManager contactManager = new ContactManager();
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             return View();
         }
 
-
+        [AllowAnonymous]
         [HttpGet]
         public PartialViewResult SendMessage()
         {
             return PartialView(); 
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public PartialViewResult SendMessage(Contact contact)
         {

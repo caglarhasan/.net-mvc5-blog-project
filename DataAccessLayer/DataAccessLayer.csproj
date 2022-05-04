@@ -85,6 +85,10 @@
     <Compile Include="Migrations\202204252015433_addingNewPropForContact.designer.cs">
       <DependentUpon>202204252015433_addingNewPropForContact.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205031956111_addingNewPropertyForAdmin.cs" />
+    <Compile Include="Migrations\202205031956111_addingNewPropertyForAdmin.designer.cs">
+      <DependentUpon>202205031956111_addingNewPropertyForAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204252015433_addingNewPropForContact.resx">
       <DependentUpon>202204252015433_addingNewPropForContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205031956111_addingNewPropertyForAdmin.resx">
+      <DependentUpon>202205031956111_addingNewPropertyForAdmin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
